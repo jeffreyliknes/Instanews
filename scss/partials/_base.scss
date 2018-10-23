@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+.nav-header {
+  color: $text-color;
+
+  .main-nav {
+    color: $text-color;
+
+    // .dropdown-menu {
+    //     color: white;
+    // }
+  }
+}
+
+.copy-right {
+  color: $text-color;
+}
+
+div {
+  color: $text-color;
+}
+
+h1 {
+  color: $text-color;
+}
+
+.dropdown-menu {
+  color: $text-color;
+}
