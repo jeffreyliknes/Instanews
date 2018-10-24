@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $("#select").on("change", function() {
+    // loading gif
+    $(".loading").show();
     let select = $("#select").val();
+    // API from New York Times website
     $.ajax({
       method: "get",
       url:
@@ -9,7 +12,9 @@ $(document).ready(function() {
         ".json?api-key=284e1a4e58644ff8b5c13eb355b79961"
     }).done(function(data) {
       $(".results").empty();
-      $(".loading").show(2000);
+      $(".container").addClass("container-height");
+      $(".logo-container").addClass("styling-container");
+      $(".logo").addClass("header-styling");
 
       let nytData = data.results
         .filter(function(item) {
@@ -31,12 +36,11 @@ $(document).ready(function() {
            }</p></div></div>
         </div>
         </div></a>`
-
-        $(".loading").remove()
         );
+      }).fail(function(err) {
+        throw err;
       });
     });
+    $(".loading").remove();
   });
 });
-
-

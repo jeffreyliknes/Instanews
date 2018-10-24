@@ -17,45 +17,49 @@
 </head>
 
 <body>
-  <img class="loading">
+
+  <div class="container">
+    <!-- contains the entire body -->
 
 
-
-  <section>
-    <header>
+    <header class="logo-container">
+      <!-- contains logo as well as the dropdown menu -->
       <div class="logo">
         <img src="images/nyt-logo.svg" alt="NY Times Logo" height="220px" width="220px">
       </div>
-      <div>
-        <div class="selector">
-          <p class="choose-section">Choose a section:</p>
-          <select id="select">
-            <option> Sections ... </option>
-            <option value="home">Home</option>
-            <option value="arts">Arts</option>
-            <option value="sports">Sports</option>
-            <option value="national">National</option>
-            <option value="health">Health</option>
-            <option value="food">Food</option>
-            <option value="movies">Movies</option>
-            <option value="travel">Travel</option>
 
-        </div>
+      <div class="selector">
+        <p class="choose-section">Choose a section:</p>
+        <select id="select">
+          <option> Sections ... </option>
+          <option value="home">Home</option>
+          <option value="arts">Arts</option>
+          <option value="sports">Sports</option>
+          <option value="national">National</option>
+          <option value="health">Health</option>
+          <option value="food">Food</option>
+          <option value="movies">Movies</option>
+          <option value="travel">Travel</option>
         </select>
+      </div>
     </header>
-    <div class="results">
-    </div>
 
-
+    <main>
+      <!-- container for the APIs that get requested -->
+      <div class="loading-result-container">
+        <img class="loading" src="images/ajax-loader.gif" alt="loading" style="display:none;">
+        <div class="results">
+        </div>
+      </div>
+    </main>
+    <!-- copyright container -->
+    <footer>
+      <div class="footer-container">
+        <p class="copy-right">&copy; Copyright 2018 INSTANEWS</p>
+      </div>
+    </footer>
+  </div>
 
 </body>
-
-
-<footer>
-  <p class="copy-right">&copy; Copyright 2018 INSTANEWS</p>
-</footer>
-
-
-
 
 </html>

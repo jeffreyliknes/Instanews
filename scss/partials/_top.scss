@@ -1,0 +1,26 @@
+// This partial contains all of the changes in the header after a change is made.
+// new classes made in script.js
+
+.container-height {
+  height: auto;
+  display: flex;
+
+  .styling-container {
+    justify-content: 0;
+    align-items: 0;
+  }
+  & .header-styling {
+    justify-content: flex-start;
+  }
+}
+
+.header-styling {
+  img {
+    width: 150px;
+    height: 150px;
+    @include tablet {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

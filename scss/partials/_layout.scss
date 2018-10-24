@@ -1,31 +1,30 @@
+// main layout to the API that get called
+
+
+
+body,
+html {
+  height: 100%;
+}
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  padding-top: 9rem;
-}
-.selector {
-  text-align: center;
-  font-family: "OpenSans", sans-serif;
-  font-weight: 100;
-}
-
-.copy-right {
-  font-family: "OpenSans", sans-serif;
-  font-weight: 100;
-  text-align: center;
-  padding-top: 10rem;
-  color: gray;
-}
 
 .loading {
-  background: url(images/ajax-loader.gif);
+  // position: fixed;
+  width: 30px;
+  left: 50px;
+  top: 50%;
   z-index: 99;
 }
 
+header {
+  padding-bottom: 1rem;
+}
 .results {
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,17 +37,20 @@
     @include desktop {
       width: 25%;
     }
-
     .article-abstract-wrapper {
       position: relative;
       .article {
         display: flex;
         height: 50vh;
         .please {
+          margin: 5px;
           .snippet {
             bottom: 0;
             position: absolute;
             background: rgba(0, 0, 0, 0.6);
+            line-height: 1.5;
+            font-size: 1rem;
+            padding: 0.5rem;
           }
         }
       }
@@ -59,20 +61,7 @@
 a {
   width: 25%;
   text-decoration: none;
-  font-family: "OpenSans", sans-serif;
+  font-family: $font-family;
   font-weight: 100;
 }
-// }
-//  {
-//   flex-basis: 25%;
-//   height: 50vh;
-//   background-repeat: no-repeat;
 
-//   div {
-//     background-size: contain;
-//     background-position: center;
-//   }
-// }
-
-// .snippet {
-// }
