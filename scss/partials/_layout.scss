@@ -1,10 +1,11 @@
 // main layout to the API that get called
 
-
-
 body,
 html {
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 * {
@@ -12,7 +13,6 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
-
 
 .loading {
   // position: fixed;
@@ -64,4 +64,3 @@ a {
   font-family: $font-family;
   font-weight: 100;
 }
-
