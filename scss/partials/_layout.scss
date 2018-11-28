@@ -51,6 +51,7 @@ header {
             line-height: 1.5;
             font-size: 1rem;
             padding: 0.5rem;
+            left: 0;
           }
         }
       }
@@ -63,4 +64,14 @@ a {
   text-decoration: none;
   font-family: $font-family;
   font-weight: 100;
+}
+
+.loading {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  width: 30px;
+  left: 50%;
+  top: 50%;
+  background: center no-repeat;
 }
