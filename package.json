@@ -1,7 +1,7 @@
 {
-  "name": "instanews",
+  "name": "Instanews",
   "version": "1.0.0",
-  "description": "A starter package for running gulp to transpile es6 and compile scss. CSS lint is included as well as some basic es-linting.",
+  "description": "A news website built using APIs to load news articles from NYT Json package.",
   "main": "gulpfile.js",
   "devDependencies": {
     "babel-core": "^6.26.0",

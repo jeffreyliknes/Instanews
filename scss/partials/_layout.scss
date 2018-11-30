@@ -15,16 +15,13 @@ html {
 }
 
 .loading {
-  // position: fixed;
   width: 30px;
   left: 50px;
   top: 50%;
   z-index: 99;
 }
 
-header {
-  padding-bottom: 1rem;
-}
+
 .results {
   flex-direction: row;
   flex-wrap: wrap;
@@ -43,7 +40,6 @@ header {
         display: flex;
         height: 50vh;
         .please {
-          margin: 5px;
           .snippet {
             bottom: 0;
             position: absolute;

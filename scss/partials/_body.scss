@@ -1,3 +1,6 @@
+main {
+  height: 100vh;
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -27,15 +30,7 @@
         @include desktop {
           width: 20%;
         }
-        }
-        img {
-          @include tablet {
-            width: 180px;
-          }
-          @include desktop {
-            width: 200px;
-          }
-        }
+      }
       }
       .selector {
         text-align: center;
@@ -43,6 +38,7 @@
         font-weight: 100;
         position: relative;
         width: 20rem;
+        padding-bottom: 1rem;
         @include tablet {
           text-align: left;
         }
@@ -53,3 +49,4 @@
       }
     }
   }
+}

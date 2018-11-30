@@ -1,26 +1,24 @@
-// This partial contains all of the changes in the header after a change is made.
+// This partial contains all of the changes in the header after a an article genre is choosen.
 // new classes made in script.js
 
-.container-height {
-  height: auto;
-  display: flex;
+main {
+  .container-height {
+    height: auto;
+    display: flex;
 
-  .styling-container {
-    justify-content: 0;
-    align-items: 0;
-  }
-  & .header-styling {
-    justify-content: flex-start;
+    .styling-container {
+      justify-content: space-around;
+      max-width: 600px;
+    }
   }
 }
-
 .header-styling {
   img {
     width: 150px;
-    height: 150px;
+    height: auto;
     @include tablet {
       width: 70px;
-      height: 70px;
+      height: auto;
     }
   }
 }

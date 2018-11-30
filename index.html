@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instanews</title>
+    <!-- My Style, note you can use style.min.css for Production -->
+    <link rel="stylesheet" href="./build/css/style.min.css" />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Script -->
+    <script src="./build/js/script.min.js"></script>
+  </head>
 
-
-  <title>Instanews</title>
-  <!-- My Style, note you can use style.min.css for Production -->
-  <link rel="stylesheet" href="./build/css/style.min.css">
-  <!-- jQuery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- My Script -->
-  <script src="./build/js/script.min.js"></script>
-</head>
-
-<body>
-
-  <div class="container">
-    <!-- contains the entire body -->
-
-
-    <header class="logo-container">
-      <!-- contains logo as well as the dropdown menu -->
-      <div class="logo">
-        <img src="images/nyt-logo.svg" alt="NY Times Logo" height="220px" width="220px">
-      </div>
-
-      <div class="selector">
-        <p class="choose-section">Choose a section:</p>
-        <select id="select">
-          <option class="first-option"> Sections ... </option>
-          <option value="home">Home</option>
-          <option value="arts">Arts</option>
-          <option value="sports">Sports</option>
-          <option value="national">National</option>
-          <option value="health">Health</option>
-          <option value="food">Food</option>
-          <option value="movies">Movies</option>
-          <option value="travel">Travel</option>
-        </select>
-      </div>
-    </header>
-
+  <body>
     <main>
-      <!-- container for the APIs that get requested -->
-      <div class="loading-result-container">
-        <img class="loading" src="images/ajax-loader.gif" alt="loading">
-        <div class="results">
-        </div>
+      <header class="container">
+        <!-- contains the entire body -->
+
+        <nav class="logo-container">
+          <!-- contains logo as well as the dropdown menu -->
+          <div class="logo">
+            <img
+              src="images/nyt-logo.svg"
+              alt="NY Times Logo"
+              height="220px"
+              width="220px"
+            />
+          </div>
+
+          <div class="selector">
+            <p class="choose-section">Choose a section:</p>
+            <select id="select">
+              <option class="first-option"> Sections ... </option>
+              <option value="home">Home</option>
+              <option value="arts">Arts</option>
+              <option value="sports">Sports</option>
+              <option value="national">National</option>
+              <option value="health">Health</option>
+              <option value="food">Food</option>
+              <option value="movies">Movies</option>
+              <option value="travel">Travel</option>
+            </select>
+          </div>
+        </nav>
+      </header>
+        <!-- container for the APIs that get requested -->
+        <article>
+          <div class="loading-result-container">
+            <img class="loading" src="images/ajax-loader.gif" alt="loading" />
+            <div class="results"></div>
+          </div>
+        </article>
+        <!-- copyright container -->
+        <footer>
+          <div class="footer-container">
+            <p class="copy-right">
+              &copy; Copyright 2018 <span>Instanews</span>
+            </p>
+          </div>
+        </footer>
       </div>
     </main>
-    <!-- copyright container -->
-    <footer>
-      <div class="footer-container">
-        <p class="copy-right">&copy; Copyright 2018 INSTANEWS</p>
-      </div>
-    </footer>
-  </div>
-
-</body>
-
+  </body>
 </html>

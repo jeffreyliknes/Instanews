@@ -24,6 +24,10 @@ Created by Jeff Liknes.
 
 
 
+A starter package for running gulp to transpile es6 and compile scss. CSS lint is included as well as some basic es-linting.",
+
+
+
 
 
 
