@@ -10,9 +10,14 @@
     text-align: center;
     font-size: 14px;
     color: #c2c2c2;
+    line-height: 2;
     @include desktop {
       text-align: left;
       padding-left: 2rem;
     }
   }
+}
+
+span {
+  text-transform: uppercase;
 }

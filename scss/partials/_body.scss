@@ -1,12 +1,12 @@
 main {
   height: 100vh;
 
-.container {
+  .container {
     display: flex;
     justify-content: space-around;
     height: 100%;
     flex-direction: column;
-  
+
     .logo-container {
       display: flex;
       align-content: center;
@@ -21,16 +21,19 @@ main {
       @include desktop {
         justify-content: flex-start;
       }
-  
+
       .logo {
-        flex-direction: column;       
+        flex-direction: column;
         padding-bottom: 1rem;
         @include tablet {
           margin-right: 1rem;
-        @include desktop {
-          width: 20%;
+         
         }
-      }
+        img {
+          @include tablet {
+            width: 80%;
+          }
+        }
       }
       .selector {
         text-align: center;

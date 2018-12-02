@@ -1,17 +1,17 @@
-$(document).ready(function() {
+$(function() {
   const $loading = $(".loading");
-  $("#select").on("change", function() {
-    let select = $("#select").val();
+  $("#section").on("change", function() {
+    let section = $("#section").val();
     $loading.show();
-    getStories(select);
+    getStories(section);
     
   });
 
-  function getStories(select) {
+  function getStories(section) {
     // API from New York Times website
     $.ajax({
       method: "get",
-      url: `https://api.nytimes.com/svc/topstories/v2/${select}.json?api-key=284e1a4e58644ff8b5c13eb355b79961`
+      url: `https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=284e1a4e58644ff8b5c13eb355b79961`
     })
       .done(function(data) {
         // loading gif

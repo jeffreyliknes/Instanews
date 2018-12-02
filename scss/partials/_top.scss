@@ -9,16 +9,16 @@ main {
     .styling-container {
       justify-content: space-around;
       max-width: 600px;
-    }
-  }
-}
-.header-styling {
-  img {
-    width: 150px;
-    height: auto;
-    @include tablet {
-      width: 70px;
-      height: auto;
+      .header-styling {
+        img {
+          width: 150px;
+          height: auto;
+          @include tablet {
+            width: 30%;
+            height: auto;
+          }
+        }
+      }
     }
   }
 }
