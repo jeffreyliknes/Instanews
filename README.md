@@ -8,6 +8,8 @@ Instanews API assignment
 
 
 
+
+
 About: 
     Instanews is a website that displays news articles with a selection of different fliters to choose from.
 This is assignment is a focus on using AJAX to get news articles and using JQuery to properly display them.
