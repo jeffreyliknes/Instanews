@@ -27,7 +27,6 @@ main {
         padding-bottom: 1rem;
         @include tablet {
           margin-right: 1rem;
-         
         }
         img {
           @include tablet {
@@ -47,7 +46,7 @@ main {
         }
         .choose-section {
           margin-bottom: 1rem;
-          font-size: 14px;
+          font-size: $font-size;
         }
       }
     }
