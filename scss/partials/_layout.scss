@@ -21,26 +21,42 @@ html {
   z-index: 99;
 }
 
+
+
+header {
+  padding-bottom: 1rem;
+}
+
+
 .results {
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
+
   .article-wrapper {
     width: 100%;
+
     @include tablet {
       width: 50%;
     }
+
     @include desktop {
       width: 25%;
     }
+
     .article-abstract-wrapper {
       position: relative;
+
       .article {
         display: flex;
         height: 50vh;
+
         .please {
+          margin: 5px;
+
           .snippet {
             bottom: 0;
+            left: 0;
             position: absolute;
             background: rgba(0, 0, 0, 0.6);
             line-height: 1.5;
@@ -70,3 +86,4 @@ a {
   top: 50%;
   background: center no-repeat;
 }
+
