@@ -4,7 +4,7 @@
 Instanews API assignment 
 
 
-![Getting Started](instanews/screenshot.png)
+![Getting Started](/Users/jmliknes/Documents/instanews/screenshot.png)
 
 
 About: 
